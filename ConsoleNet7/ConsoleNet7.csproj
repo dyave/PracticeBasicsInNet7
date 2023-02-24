@@ -9,8 +9,10 @@
 
   <ItemGroup>
     <None Remove="Exercise1\" />
+    <None Remove="Exercise2\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Exercise1\" />
+    <Folder Include="Exercise2\" />
   </ItemGroup>
 </Project>
