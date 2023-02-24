@@ -5,5 +5,6 @@ using ConsoleNet7.Exercise2;
 //ReportDigits.ExecuteSample();
 //OddOrEven.ExecuteSample();
 
-StringOps.ExecuteSample();
+//StringOps.ExecuteSample();
+ListOps.ExecuteSample();
 
