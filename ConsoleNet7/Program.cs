@@ -1,3 +1,4 @@
-﻿using ConsoleNet7;
+﻿using ConsoleNet7.Exercise1;
 
-Exercise1.Palindrome();
+//Palindrome.ExecuteSample();
+ReportDigits.ExecuteSample();

@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace ConsoleNet7;
+namespace ConsoleNet7.Exercise1;
 
-public static class Exercise1
+public static class Palindrome
 {
-	public static void Palindrome()
+	public static void ExecuteSample()
 	{
         Random rnd = new();
         bool isPal = false;
@@ -18,7 +18,6 @@ public static class Exercise1
 
         Console.WriteLine("{0} Palindrome", isPal ? "Is" : "Isn't");
     }
-
 
     static bool CheckPalindrome(int num)
     {
