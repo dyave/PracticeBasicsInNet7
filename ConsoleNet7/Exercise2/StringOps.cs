@@ -7,10 +7,14 @@ public static class StringOps
     public static void ExecuteSample()
     {
         string str = "Los pollitos dicen pio pio";
-        CountCharacters(str);
+        CountSameCharacters(str);
+
+        var input = Console.ReadLine();
+        Console.WriteLine("Total amount of vocals: {0}", CountVocals(input));
+
     }
 
-    private static void CountCharacters(string str)
+    private static void CountSameCharacters(string str)
     {
         Dictionary<char, int> charnum = new();
         foreach (var c in str)
@@ -28,5 +32,18 @@ public static class StringOps
         {
             Console.WriteLine("{0} => {1}", cn.Key, cn.Value);
         }
+    }
+
+    private static int CountVocals(string str)
+    {
+        int count = 0;
+        foreach (var i in str)
+        {
+            if (i == 'a' || i == 'e' || i == 'i' || i == 'o' || i == 'u' || i == 'A' || i == 'E' || i == 'I' || i == 'O' || i == 'U')
+            {
+                count++;
+            }
+        }
+        return count;
     }
 }
