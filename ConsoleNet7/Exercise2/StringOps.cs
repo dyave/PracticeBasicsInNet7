@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace ConsoleNet7.Exercise2;
 
@@ -10,7 +11,7 @@ public static class StringOps
         CountSameCharacters(str);
 
         var input = Console.ReadLine();
-        Console.WriteLine("Total amount of vocals: {0}", CountVocals(input));
+        Console.WriteLine("Only vocals: {0}", FilterVocals(input, 5));
 
     }
 
@@ -34,16 +35,19 @@ public static class StringOps
         }
     }
 
-    private static int CountVocals(string str)
+    private static string FilterVocals(string str, int num)
     {
         int count = 0;
+        StringBuilder sb = new("");
         foreach (var i in str)
         {
             if (i == 'a' || i == 'e' || i == 'i' || i == 'o' || i == 'u' || i == 'A' || i == 'E' || i == 'I' || i == 'O' || i == 'U')
             {
+                sb.Append(i);
                 count++;
+                if (count == num) break;
             }
         }
-        return count;
+        return sb.ToString();
     }
 }
